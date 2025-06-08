@@ -9,3 +9,5 @@ On the backend, the app makes use of a MySQL database and PHP scripts to handle 
 Just a quick note: since the app was developed specifically for Android, it can only be installed on Android devices. Also, it relies on a WITS-hosted server to connect to its database — which means the app will only function as long as that server remains up and running.
 
 For a full walkthrough of how the app works, you can check out the video and PDF linked below. They cover everything in detail.
+
+[DBF.Surrogate.Shopper.pdf](https://github.com/user-attachments/files/20646432/DBF.Surrogate.Shopper.pdf)
