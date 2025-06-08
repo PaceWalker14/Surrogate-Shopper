@@ -1,0 +1,47 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <EditText
+        android:id="@+id/etItemRequest"
+        android:hint="Enter items you need"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/btnSubmitRequest"
+        android:text="Submit Request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/btnGoToProfile"
+        android:text="Go To Profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+    <!-- New field for personal Thank You message -->
+    <EditText
+        android:id="@+id/etThankYouMessage"
+        android:hint="Write a Thank You Message"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/btnPostThanks"
+        android:text="Post Thanks to your Latest Volunteer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

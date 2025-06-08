@@ -1,0 +1,57 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#f8eee4">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:src="@drawable/pic2"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="App Logo"
+        android:scaleType="centerInside"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/tvHelpLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help someone by picking an item to deliver!"
+        android:textColor="#D40000"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <ListView
+        android:id="@+id/lvRequests"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/black"
+        android:dividerHeight="1dp" />
+
+    <Button
+        android:id="@+id/btnViewMessages"
+        android:text="View thank you messages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#D40000"
+        android:textColor="#FFFFFF"
+        android:elevation="4dp" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:text="Log Out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#D40000"
+        android:textColor="#FFFFFF"
+        android:elevation="4dp" />
+
+</LinearLayout>

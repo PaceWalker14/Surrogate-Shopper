@@ -1,0 +1,173 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#f9f8f6">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Request Items Heading -->
+            <TextView
+                android:id="@+id/tvRequestItemsHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pending Items 🛒"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#D40000"
+                android:gravity="center"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Small label under heading -->
+            <TextView
+                android:id="@+id/tvPendingItemsInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your pending items will appear here"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_marginBottom="8dp" />
+
+            <!-- List of Requested Items -->
+            <ListView
+                android:id="@+id/lvRequestedItems"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:divider="@android:color/darker_gray"
+                android:dividerHeight="1dp"
+                android:background="#FFFFFF"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D40000"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Request Item Block -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bordered_box"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/tvRequestLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Request for a new item"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#D40000"
+                    android:gravity="center"
+                    android:layout_marginBottom="8dp" />
+
+                <EditText
+                    android:id="@+id/etNewItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter item(s) to request"
+                    android:padding="12dp"
+                    android:backgroundTint="#D40000"
+                    android:textColor="#000000"
+                    android:textColorHint="#888888" />
+
+                <Button
+                    android:id="@+id/btnSubmitItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Submit Request"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="#D40000"
+                    android:textColor="#FFFFFF"
+                    android:elevation="4dp" />
+            </LinearLayout>
+
+            <!-- Volunteer Heading -->
+            <TextView
+                android:id="@+id/tvThankAVolunteer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thank a Volunteer 🙌"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#D40000"
+                android:gravity="center"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Small label under volunteer heading -->
+            <TextView
+                android:id="@+id/tvVolunteerInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Volunteers who have helped you will appear here"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvClickToMessageInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click on the username to send them a message"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_marginBottom="8dp" />
+
+
+
+            <!-- List of Past Volunteers -->
+            <ListView
+                android:id="@+id/lvPastVolunteers"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:divider="@android:color/darker_gray"
+                android:dividerHeight="1dp"
+                android:background="#FFFFFF"
+                android:layout_marginBottom="16dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Button -->
+    <Button
+        android:id="@+id/btnGoToProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go To Profile"
+        android:backgroundTint="#D40000"
+        android:textColor="#FFFFFF"
+        android:elevation="4dp" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:backgroundTint="#D40000"
+        android:textColor="#FFFFFF"
+        android:elevation="4dp"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>
+
+
+
+
+

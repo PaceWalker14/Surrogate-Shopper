@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Surrogateshopper" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Surrogateshopper" parent="Base.Theme.Surrogateshopper" />
+
+    <!-- Splash screen theme -->
+    <style name="Theme.Surrogateshopper.Splash" parent="Theme.SplashScreen">
+        <!-- Background color for splash screen -->
+        <item name="windowSplashScreenBackground">@color/white</item>
+
+        <!-- Splash screen logo  -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo</item>
+
+        <!-- App's theme to use after splash -->
+        <item name="postSplashScreenTheme">@style/Theme.Surrogateshopper</item>
+    </style>
+
+</resources>

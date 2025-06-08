@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f8f6"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Description Label -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A Shopper is someone who requests help getting items they need. A Volunteer is someone who offers to fetch and deliver these items to those in need."
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp"
+            android:background="#fff3cd"
+            android:elevation="2dp" />
+
+        <!-- Account Type Selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Account Type:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rgAccountType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbRequestAssistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shopper"
+                android:checked="true"
+                android:buttonTint="@color/radio_button_tint"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/rbProvideAssistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Volunteer"
+                android:buttonTint="@color/radio_button_tint"
+                android:textColor="#000000"
+                android:layout_marginStart="16dp" />
+        </RadioGroup>
+
+        <!-- Common Fields -->
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:backgroundTint="#D40000"
+            android:textColor="#000000"
+            android:textColorHint="#888888" />
+
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:backgroundTint="#D40000"
+            android:textColor="#000000"
+            android:textColorHint="#888888" />
+
+        <EditText
+            android:id="@+id/etNewUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:backgroundTint="#D40000"
+            android:textColor="#000000"
+            android:textColorHint="#888888" />
+
+        <EditText
+            android:id="@+id/etNewPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:backgroundTint="#D40000"
+            android:textColor="#000000"
+            android:textColorHint="#888888" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:backgroundTint="#D40000"
+            android:textColor="#000000"
+            android:textColorHint="#888888" />
+
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:backgroundTint="#D40000"
+            android:textColor="#000000"
+            android:textColorHint="#888888" />
+
+        <!-- Shopper Extra Fields -->
+        <LinearLayout
+            android:id="@+id/shopperExtraFields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp">
+
+            <EditText
+                android:id="@+id/etStreetAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Street Address"
+                android:padding="12dp"
+                android:backgroundTint="#D40000"
+                android:textColor="#000000"
+                android:textColorHint="#888888" />
+
+            <EditText
+                android:id="@+id/etCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="City"
+                android:layout_marginTop="12dp"
+                android:padding="12dp"
+                android:backgroundTint="#D40000"
+                android:textColor="#000000"
+                android:textColorHint="#888888" />
+
+            <EditText
+                android:id="@+id/etStateProvince"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="State/Province"
+                android:layout_marginTop="12dp"
+                android:padding="12dp"
+                android:backgroundTint="#D40000"
+                android:textColor="#000000"
+                android:textColorHint="#888888" />
+
+            <EditText
+                android:id="@+id/etZipCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Zip Code"
+                android:inputType="number"
+                android:layout_marginTop="12dp"
+                android:padding="12dp"
+                android:backgroundTint="#D40000"
+                android:textColor="#000000"
+                android:textColorHint="#888888" />
+
+            <EditText
+                android:id="@+id/etBirthDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Birth Date (MM/DD/YYYY)"
+                android:inputType="none"
+                android:layout_marginTop="12dp"
+                android:padding="12dp"
+                android:backgroundTint="#D40000"
+                android:textColor="#000000"
+                android:textColorHint="#888888" />
+        </LinearLayout>
+
+        <!-- Buttons -->
+        <Button
+            android:id="@+id/btnRegisterShopper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Shopper Account"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#D40000"
+            android:textColor="#FFFFFF"
+            android:elevation="4dp" />
+
+        <Button
+            android:id="@+id/btnRegisterVolunteer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Volunteer Account"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="24dp"
+            android:visibility="gone"
+            android:backgroundTint="#D40000"
+            android:textColor="#FFFFFF"
+            android:elevation="4dp" />
+    </LinearLayout>
+</ScrollView>
+
+
