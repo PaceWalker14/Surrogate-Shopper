@@ -33,26 +33,24 @@ The project follows a **Client-Server architecture** utilizing a LAMP stack:
 
 ### Backend
 * **Database:** MySQL (Hosted on WITS University LAMP server).
-* **API Layer:** Custom PHP scripts that process SQL queries to handle:
-    * User account creation and validation.
-    * Database CRUD operations for help requests.
-    * Storing and fetching message history.
+* **API Layer:** Custom PHP scripts that process SQL queries to handle user accounts, help requests, and messaging history.
 
 ---
 
-## 🛠️ Installation & Requirements
+## 🚀 Installation & Usage
 
-### Prerequisites
-* **Device:** Android mobile device (API 24+ recommended).
-* **Connectivity:** An active internet connection is required to communicate with the remote WITS server.
+### Option 1: Quick Install (Recommended)
+1. Download the `app-release.apk` file from this repository.
+2. Transfer the file to your Android device.
+3. Open the file to install (ensure "Install from Unknown Sources" is enabled in your settings).
 
-### Setup
+### Option 2: Build from Source
 1. Clone the repository.
-2. Open the project in **Android Studio**.
-3. Build the APK and install it on your Android device.
+2. Open the `SurrogateShopper` folder in **Android Studio**.
+3. Build and run the project on an emulator or physical device.
 
 > [!CAUTION]
-> **Server Dependency:** This application relies on a university-hosted LAMP server. If the WITS server is offline or the database is cleared, login and data-fetching features will be unavailable.
+> **Server Dependency:** This application relies on a university-hosted LAMP server. If the WITS server is offline, login and data-fetching features will be unavailable. An active internet connection is required.
 
 ---
 
